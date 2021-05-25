@@ -459,6 +459,55 @@ class Paper:
         })
         return release_dict
 
+    def to_plain_text(self, output_file, doc_type: str="pdf"):
+        """
+        Return in plain text format
+        :return:
+        """
+
+        text_output = "Title\t"
+
+        text_output += self.metadata.title+"\n"
+
+        text_output += "Abstract:\t" + self.raw_abstract_text
+
+        body_texts = [para.as_json() for para in self.body_text]
+
+        header_keeper = set()
+        
+        for body in body_texts:
+            if body["section"] not in  header_keeper:
+                text_output += "\n" + body["section"] + "\t" + body["text"] + " "
+                header_keeper.add(body["section"])
+            else:
+                text_output += body["text"] + " "
+
+
+        writter = open(output_file+".txt", 'w')
+        writter.write(text_output)
+        writter.close()
+
+        # # TODO: not fully implemented; metadata format is not right; extra keys in some places
+        # release_dict = {"paper_id": self.paper_id}
+        # release_dict.update({"header": {
+        #     "generated_with": f'{S2ORC_NAME_STRING} {S2ORC_VERSION_STRING}',
+        #     "date_generated": datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%fZ')
+        # }})
+        # release_dict.update(self.metadata.as_json())
+        # release_dict.update({"abstract": self.raw_abstract_text})
+        # release_dict.update({
+        #     f"{doc_type}_parse": {
+        #         "paper_id": self.paper_id,
+        #         "_pdf_hash": self.pdf_hash,
+        #         "abstract": [para.as_json() for para in self.abstract],
+        #         "body_text": [para.as_json() for para in self.body_text],
+        #         "back_matter": [para.as_json() for para in self.back_matter],
+        #         "bib_entries": {bib.bib_id: bib.as_json() for bib in self.bib_entries},
+        #         "ref_entries": {ref.ref_id: ref.as_json() for ref in self.ref_entries}
+        #     }
+        # })
+        return text_output
+
 
 def load_s2orc(paper_dict: Dict) -> Paper:
     """

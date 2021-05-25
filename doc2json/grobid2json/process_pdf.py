@@ -62,6 +62,7 @@ def process_pdf_file(input_file: str, temp_dir: str, output_dir: str) -> str:
     # write to file
     with open(output_file, 'w') as outf:
         json.dump(paper.release_json(), outf, indent=4, sort_keys=False)
+        paper.to_plain_text(output_file)
 
     return output_file
 
