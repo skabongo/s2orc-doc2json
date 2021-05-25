@@ -2,7 +2,7 @@
     "paper_id": "TDMS",
     "header": {
         "generated_with": "S2ORC 1.0.0",
-        "date_generated": "2021-05-25T11:29:23.226055Z"
+        "date_generated": "2021-05-25T12:26:10.137163Z"
     },
     "title": "Identification of Tasks, Datasets, Evaluation Metrics, and Numeric Scores for Scientific Leaderboards Construction",
     "authors": [
@@ -2492,52 +2492,52 @@
         },
         "ref_entries": {
             "FIGREF0": {
+                "num": null,
                 "type_str": "figure",
                 "uris": null,
-                "text": "for Entity Analysis: Coreference, Typing, and Linking",
-                "num": null
+                "text": "for Entity Analysis: Coreference, Typing, and Linking"
             },
             "FIGREF1": {
+                "num": null,
                 "type_str": "figure",
                 "uris": null,
-                "text": "System architecture for TDMS-IE.",
-                "num": null
+                "text": "System architecture for TDMS-IE."
             },
             "TABREF0": {
-                "type_str": "table",
-                "text": "Table extraction results of our table parser on 50 tables from 10 NLP papers in PDF format.",
                 "num": null,
-                "content": "<table><tr><td>mEval 2018 Task 7) with a dataset of 350 anno-</td></tr><tr><td>tated abstracts. Ammar et al. (2017, 2018); Luan</td></tr><tr><td>et al. (2017); Augenstein and S\u00f8gaard (2017) ex-</td></tr><tr><td>ploit these datasets to test neural models for IE</td></tr><tr><td>on scientific literature. Luan et al. (2018) extend</td></tr><tr><td>those datasets by adding more relation types and</td></tr><tr><td>cross-sentence relations using coreference links.</td></tr><tr><td>The authors also develop a framework called Sci-</td></tr><tr><td>entific Information Extractor for the extraction of</td></tr><tr><td>six types of scientific entities (Task, Method, Met-</td></tr><tr><td>ric, Material, Other-ScientificTerm and Generic)</td></tr><tr><td>and seven relation types (Compare, Part-of, Con-</td></tr><tr><td>junction, Evaluate-for, Feature-of, Used-for, and</td></tr><tr><td>Hyponym-of ). They reach 64.2 F 1 on entity recog-</td></tr><tr><td>nition and 39.2 F 1 on relation extraction. Differ-</td></tr><tr><td>ently from</td></tr></table>"
+                "type_str": "table",
+                "content": "<table><tr><td>mEval 2018 Task 7) with a dataset of 350 anno-</td></tr><tr><td>tated abstracts. Ammar et al. (2017, 2018); Luan</td></tr><tr><td>et al. (2017); Augenstein and S\u00f8gaard (2017) ex-</td></tr><tr><td>ploit these datasets to test neural models for IE</td></tr><tr><td>on scientific literature. Luan et al. (2018) extend</td></tr><tr><td>those datasets by adding more relation types and</td></tr><tr><td>cross-sentence relations using coreference links.</td></tr><tr><td>The authors also develop a framework called Sci-</td></tr><tr><td>entific Information Extractor for the extraction of</td></tr><tr><td>six types of scientific entities (Task, Method, Met-</td></tr><tr><td>ric, Material, Other-ScientificTerm and Generic)</td></tr><tr><td>and seven relation types (Compare, Part-of, Con-</td></tr><tr><td>junction, Evaluate-for, Feature-of, Used-for, and</td></tr><tr><td>Hyponym-of ). They reach 64.2 F 1 on entity recog-</td></tr><tr><td>nition and 39.2 F 1 on relation extraction. Differ-</td></tr><tr><td>ently from</td></tr></table>",
+                "text": "Table extraction results of our table parser on 50 tables from 10 NLP papers in PDF format."
             },
             "TABREF2": {
-                "type_str": "table",
-                "text": "",
                 "num": null,
-                "content": "<table/>"
+                "type_str": "table",
+                "content": "<table/>",
+                "text": ""
             },
             "TABREF4": {
-                "type_str": "table",
-                "text": "Statistics of papers and extracted tables in ARC-PDN.",
                 "num": null,
-                "content": "<table/>"
+                "type_str": "table",
+                "content": "<table/>",
+                "text": "Statistics of papers and extracted tables in ARC-PDN."
             },
             "TABREF5": {
-                "type_str": "table",
-                "text": "Results on the ACE 2005 \u2026 and Joint models. Dev MUC B3 CEAFe Avg. NER Link",
                 "num": null,
-                "content": "<table><tr><td/><td/><td/><td/><td>Title</td></tr><tr><td/><td/><td/><td/><td>Abstract</td></tr><tr><td/><td/><td/><td/><td>ExpSetup:</td><td>sentences describing experimental</td></tr><tr><td/><td/><td/><td/><td>setup</td></tr><tr><td/><td/><td/><td/><td>TableInfo:</td><td>concatenation of the table caption</td></tr><tr><td/><td/><td/><td/><td>and column headers for all tables</td></tr><tr><td/><td/><td/><td/><td>Test \u2026 Table2: \u2026</td></tr><tr><td/><td>\u2026</td><td colspan=\"3\">Score context representation</td><td>Corresponding column headers Table caption</td></tr><tr><td/><td/><td colspan=\"2\">Score</td><td>Score Context</td></tr><tr><td/><td/><td colspan=\"2\">85.60</td><td>Test NER Table 1: Results on the ACE 2005 dev and test sets for the INDEP. (Task-specific factors only) and Joint models.</td></tr><tr><td/><td/><td colspan=\"2\">61.71</td><td>Avg. F1 Table 4: CoNLL metric scores for our systems on the CoNLL 2012 blind test set. \u2026</td></tr><tr><td/><td/><td>\u2026</td><td/><td>\u2026</td></tr><tr><td colspan=\"5\">Figure 2: Examples of document representation (DocTAET) and score context (SC) representation.</td></tr><tr><td colspan=\"2\">Training Stage</td><td/><td/><td>Inference Stage</td></tr><tr><td colspan=\"2\">DocTAET-TDM entailment Model</td><td>PDF/</td><td/><td>Extract &lt;Task, Dataset, Metric&gt;</td></tr><tr><td colspan=\"2\">True/False</td><td colspan=\"2\">Entails</td><td>Hypothesis space: &lt;Task, Dataset, Metric&gt; triples from a taxonomy</td></tr><tr><td/><td/><td/><td colspan=\"2\">\u2713</td><td>H: Named entity recognition, ACE 2005 (Test), Accuracy</td></tr><tr><td colspan=\"2\">Transformer Encoder</td><td>Document representation</td><td colspan=\"2\">\u2715 \u2713 \u2713</td><td>H: Entity linking, ACE 2005 (Test), Accuracy H: Coreference resolution, CoNLL 2012 (Test), Avg. F1 H: Dependency parsing, Penn Treebank, UAS</td></tr><tr><td>DocTAET</td><td>Task, Dataset, Metric</td><td/><td/><td>H: \u2026</td></tr><tr><td>Text</td><td>Hypothesis</td><td/><td/></tr><tr><td/><td/><td/><td colspan=\"2\">Extract &lt;Task, Dataset, Metric, Score&gt;</td></tr><tr><td colspan=\"2\">SC-DM entailment Model</td><td/><td colspan=\"2\">Entails</td><td>Hypothesis space: Predicted &lt;Dataset, Metric&gt;</td></tr><tr><td colspan=\"2\">True/False</td><td>Score1: s 1 context</td><td/><td>0.87 0.25</td><td>H: ACE 2005 (Test), Accuracy</td></tr><tr><td/><td/><td>Score2: s 2 context</td><td>0.68</td></tr><tr><td colspan=\"2\">Transformer Encoder</td><td>\u2026</td><td>0.35 0.05</td><td>H: CoNLL 2012 (Test), Avg. F1</td></tr><tr><td/><td/><td>Score n : s n context</td><td colspan=\"2\">0.75</td></tr><tr><td>Score Context (SC)</td><td>Dataset, Metric</td><td colspan=\"3\">For each predicted &lt;Task, Dataset, Metric&gt;, associate the score whose context has the</td></tr><tr><td>Text</td><td>Hypothesis</td><td colspan=\"3\">highest confidence score to \"entail\" &lt;Dataset, Metric&gt;</td></tr></table>"
+                "type_str": "table",
+                "content": "<table><tr><td/><td/><td/><td/><td>Title</td></tr><tr><td/><td/><td/><td/><td>Abstract</td></tr><tr><td/><td/><td/><td/><td>ExpSetup:</td><td>sentences describing experimental</td></tr><tr><td/><td/><td/><td/><td>setup</td></tr><tr><td/><td/><td/><td/><td>TableInfo:</td><td>concatenation of the table caption</td></tr><tr><td/><td/><td/><td/><td>and column headers for all tables</td></tr><tr><td/><td/><td/><td/><td>Test \u2026 Table2: \u2026</td></tr><tr><td/><td>\u2026</td><td colspan=\"3\">Score context representation</td><td>Corresponding column headers Table caption</td></tr><tr><td/><td/><td colspan=\"2\">Score</td><td>Score Context</td></tr><tr><td/><td/><td colspan=\"2\">85.60</td><td>Test NER Table 1: Results on the ACE 2005 dev and test sets for the INDEP. (Task-specific factors only) and Joint models.</td></tr><tr><td/><td/><td colspan=\"2\">61.71</td><td>Avg. F1 Table 4: CoNLL metric scores for our systems on the CoNLL 2012 blind test set. \u2026</td></tr><tr><td/><td/><td>\u2026</td><td/><td>\u2026</td></tr><tr><td colspan=\"5\">Figure 2: Examples of document representation (DocTAET) and score context (SC) representation.</td></tr><tr><td colspan=\"2\">Training Stage</td><td/><td/><td>Inference Stage</td></tr><tr><td colspan=\"2\">DocTAET-TDM entailment Model</td><td>PDF/</td><td/><td>Extract &lt;Task, Dataset, Metric&gt;</td></tr><tr><td colspan=\"2\">True/False</td><td colspan=\"2\">Entails</td><td>Hypothesis space: &lt;Task, Dataset, Metric&gt; triples from a taxonomy</td></tr><tr><td/><td/><td/><td colspan=\"2\">\u2713</td><td>H: Named entity recognition, ACE 2005 (Test), Accuracy</td></tr><tr><td colspan=\"2\">Transformer Encoder</td><td>Document representation</td><td colspan=\"2\">\u2715 \u2713 \u2713</td><td>H: Entity linking, ACE 2005 (Test), Accuracy H: Coreference resolution, CoNLL 2012 (Test), Avg. F1 H: Dependency parsing, Penn Treebank, UAS</td></tr><tr><td>DocTAET</td><td>Task, Dataset, Metric</td><td/><td/><td>H: \u2026</td></tr><tr><td>Text</td><td>Hypothesis</td><td/><td/></tr><tr><td/><td/><td/><td colspan=\"2\">Extract &lt;Task, Dataset, Metric, Score&gt;</td></tr><tr><td colspan=\"2\">SC-DM entailment Model</td><td/><td colspan=\"2\">Entails</td><td>Hypothesis space: Predicted &lt;Dataset, Metric&gt;</td></tr><tr><td colspan=\"2\">True/False</td><td>Score1: s 1 context</td><td/><td>0.87 0.25</td><td>H: ACE 2005 (Test), Accuracy</td></tr><tr><td/><td/><td>Score2: s 2 context</td><td>0.68</td></tr><tr><td colspan=\"2\">Transformer Encoder</td><td>\u2026</td><td>0.35 0.05</td><td>H: CoNLL 2012 (Test), Avg. F1</td></tr><tr><td/><td/><td>Score n : s n context</td><td colspan=\"2\">0.75</td></tr><tr><td>Score Context (SC)</td><td>Dataset, Metric</td><td colspan=\"3\">For each predicted &lt;Task, Dataset, Metric&gt;, associate the score whose context has the</td></tr><tr><td>Text</td><td>Hypothesis</td><td colspan=\"3\">highest confidence score to \"entail\" &lt;Dataset, Metric&gt;</td></tr></table>",
+                "text": "Results on the ACE 2005 \u2026 and Joint models. Dev MUC B3 CEAFe Avg. NER Link"
             },
             "TABREF7": {
-                "type_str": "table",
-                "text": "Statistics of training/test sets in NLP-TDMS.",
                 "num": null,
-                "content": "<table/>"
+                "type_str": "table",
+                "content": "<table/>",
+                "text": "Statistics of training/test sets in NLP-TDMS."
             },
             "TABREF9": {
-                "type_str": "table",
-                "text": "Leaderboard extraction results of TDMS-IE and several baselines on the NLP-TDMS test dataset.",
                 "num": null,
-                "content": "<table/>"
+                "type_str": "table",
+                "content": "<table/>",
+                "text": "Leaderboard extraction results of TDMS-IE and several baselines on the NLP-TDMS test dataset."
             }
         }
     }

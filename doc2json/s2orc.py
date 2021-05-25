@@ -483,7 +483,7 @@ class Paper:
                 text_output += body["text"] + " "
 
 
-        writter = open(output_file+".txt", 'w')
+        writter = open(output_file[:-5]+".txt", 'w')
         writter.write(text_output)
         writter.close()
 
